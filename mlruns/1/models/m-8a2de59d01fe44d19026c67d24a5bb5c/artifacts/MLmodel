@@ -1,0 +1,38 @@
+artifact_path: file:C:/Users/AD/Desktop/CollegeCourseProject/Project1/mlruns/1/models/m-8a2de59d01fe44d19026c67d24a5bb5c/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.13.0
+model_id: m-8a2de59d01fe44d19026c67d24a5bb5c
+model_size_bytes: 446686
+model_uuid: m-8a2de59d01fe44d19026c67d24a5bb5c
+prompts: null
+run_id: 59e331de31d849998741da2e87e70e16
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "string",
+    "name": "workclass", "required": true}, {"type": "long", "name": "fnlwgt", "required":
+    true}, {"type": "string", "name": "education", "required": true}, {"type": "long",
+    "name": "educational-num", "required": true}, {"type": "string", "name": "marital-status",
+    "required": true}, {"type": "string", "name": "occupation", "required": true},
+    {"type": "string", "name": "relationship", "required": true}, {"type": "string",
+    "name": "race", "required": true}, {"type": "string", "name": "gender", "required":
+    true}, {"type": "long", "name": "capital-gain", "required": true}, {"type": "long",
+    "name": "capital-loss", "required": true}, {"type": "long", "name": "hours-per-week",
+    "required": true}, {"type": "string", "name": "native-country", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-17 12:04:51.376441'
