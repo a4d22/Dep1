@@ -34,3 +34,7 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build -t income-api:${{ github.sha }} .
+      
+      - name: Verify Image Exists
+        run: |
+          docker images
