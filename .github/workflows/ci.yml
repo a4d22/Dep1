@@ -48,7 +48,7 @@ jobs:
       
       - name: Tag Docker Image
         run: |
-          docker tag income-api:${{ github.sha }} ${{ steps.login-ecr.outputs.registry }}/{{ secrets.ECR_REPOSITORY }}:${{ github.sha }}
+          docker tag income-api:${{ github.sha }} ${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:${{ github.sha }}
       
       - name: Push Docker Image
         run: |
